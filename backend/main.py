@@ -1,5 +1,7 @@
 
 from fastapi import FastAPI
+from routers.events import router as events_router
+from routers.rsvp import router as rsvp_router
 
 app = FastAPI(
     title="CloudSync API",
@@ -18,6 +20,9 @@ def home():
 
 @app.get("/health")
 def health_check():
-    return {
-        "status": "healthy"
-    }
+    return {"status": "healthy"}
+
+
+app.include_router(events_router)
+app.include_router(rsvp_router)
+
