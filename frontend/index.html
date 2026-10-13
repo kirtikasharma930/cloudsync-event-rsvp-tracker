@@ -22,8 +22,29 @@
 
         <section id="events">
             <h2>Upcoming Events</h2>
-            <p id="eventMessage">Your events will appear here.</p>
+           <div id="eventMessage" class="event-list">Your events will appear here.</div> 
+        
+        <section id="rsvp">
+            <h2>Event RSVP</h2>
+            <p>Let us know if you will attend the event.</p>
+
+            <form id="rsvpForm">
+                <label for="attendeeName">Your Name:</label>
+                <input type="text" id="attendeeName" required>
+
+                <label for="rsvpStatus">Your Response:</label>
+                <select id="rsvpStatus" required>
+                    <option value="Going">Going</option>
+                    <option value="Maybe">Maybe</option>
+                    <option value="Not Going">Not Going</option>
+                </select>
+
+                <button type="submit">Submit RSVP</button>
+            </form>
+
+            <p id="rsvpMessage"></p>
         </section>
+
     </main>
 
     <script src="script.js"></script>

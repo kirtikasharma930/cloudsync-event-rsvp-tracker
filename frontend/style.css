@@ -1,4 +1,264 @@
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f3ff;
+    color: #1e1b4b;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #4338ca, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #ede9fe;
+    margin-bottom: 0;
+}
+
+main {
+    max-width: 950px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(67, 56, 202, 0.08);
+    border: 1px solid #ede9fe;
+}
+
+h2 {
+    color: #4338ca;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+button {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(79, 70, 229, 0.25);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+label {
+    font-weight: 600;
+    color: #3730a3;
+    margin-top: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c4b5fd;
+    border-radius: 9px;
+    background: #fafaff;
+    color: #1e1b4b;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+#eventMessage {
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+#rsvpMessage {
+    color: #4338ca;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 14px;
+    }
+
+    section {
+        padding: 22px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f3ff;
+    color: #1e1b4b;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #4338ca, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #ede9fe;
+    margin-bottom: 0;
+}
+
+main {
+    max-width: 950px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(67, 56, 202, 0.08);
+    border: 1px solid #ede9fe;
+}
+
+h2 {
+    color: #4338ca;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+button {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(79, 70, 229, 0.25);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+label {
+    font-weight: 600;
+    color: #3730a3;
+    margin-top: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c4b5fd;
+    border-radius: 9px;
+    background: #fafaff;
+    color: #1e1b4b;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+#eventMessage {
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+#rsvpMessage {
+    color: #4338ca;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 14px;
+    }
+
+    section {
+        padding: 22px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
