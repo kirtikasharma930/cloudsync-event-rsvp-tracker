@@ -8,10 +8,91 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSync | Event Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header>
         <h1>☁️ CloudSync</h1>
         <p>Plan Smarter. Connect Faster.</p>
     </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to CloudSync</h2>
+            <p>Manage events and track RSVPs in one place.</p>
+            <button id="exploreBtn" type="button">Explore Events</button>
+        </section>
+
+        <section id="createEvent">
+            <h2>Create New Event</h2>
+            <form id="createEventForm">
+                <label for="eventTitle">Event Title:</label>
+                <input type="text" id="eventTitle" required>
+
+                <label for="eventDate">Date:</label>
+                <input type="date" id="eventDate" required>
+
+                <label for="eventVenue">Venue or Meeting Link:</label>
+                <input type="text" id="eventVenue" required>
+
+                <label for="eventCapacity">Maximum Attendees:</label>
+                <input type="number" id="eventCapacity" min="1" required>
+
+                <label for="eventDescription">Description:</label>
+                <textarea id="eventDescription" required></textarea>
+
+                <button type="submit">Create Event</button>
+            </form>
+            <p id="createEventMessage"></p>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div id="eventMessage" class="event-list">
+                Your events will appear here.
+            </div>
+        </section>
+
+        <section id="rsvp">
+            <h2>Event RSVP</h2>
+            <p>Let us know if you will attend the event.</p>
+
+            <form id="rsvpForm">
+                <label for="rsvpEvent">Choose Event:</label>
+<select id="rsvpEvent" required>
+    <option value="">Select an event</option>
+</select>
+                <label for="attendeeName">Your Name:</label>
+                <input type="text" id="attendeeName" required>
+
+                <label for="rsvpStatus">Your Response:</label>
+                <select id="rsvpStatus" required>
+                    <option value="Going">Going</option>
+                    <option value="Maybe">Maybe</option>
+                    <option value="Not Going">Not Going</option>
+                </select>
+
+                <button type="submit">Submit RSVP</button>
+            </form>
+
+            <p id="rsvpMessage"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <header>
+        <h1>☁️ CloudSync</h1>
+        <p>Plan Smarter. Connect Faster.</p>
+    </body>header>
 
     <main>
         <section class="welcome">
@@ -29,6 +110,10 @@
             <p>Let us know if you will attend the event.</p>
 
             <form id="rsvpForm">
+              <label for="rsvpEvent">Choose Event:</label>
+<select id="rsvpEvent" required>
+    <option value="">Select an event</option>
+</select>  
                 <label for="attendeeName">Your Name:</label>
                 <input type="text" id="attendeeName" required>
 
@@ -48,5 +133,87 @@
     </main>
 
     <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSync | Event Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>☁️ CloudSync</h1>
+        <p>Plan Smarter. Connect Faster.</p>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to CloudSync</h2>
+            <p>Manage events and track RSVPs in one place.</p>
+            <button id="exploreBtn" type="button">Explore Events</button>
+        </section>
+
+        <section id="createEvent">
+            <h2>Create New Event</h2>
+            <form id="createEventForm">
+                <label for="eventTitle">Event Title:</label>
+                <input type="text" id="eventTitle" required>
+
+                <label for="eventDate">Date:</label>
+                <input type="date" id="eventDate" required>
+
+                <label for="eventVenue">Venue or Meeting Link:</label>
+                <input type="text" id="eventVenue" required>
+
+                <label for="eventCapacity">Maximum Attendees:</label>
+                <input type="number" id="eventCapacity" min="1" required>
+
+                <label for="eventDescription">Description:</label>
+                <textarea id="eventDescription" required></textarea>
+
+                <button type="submit">Create Event</button>
+            </form>
+            <p id="createEventMessage"></p>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div id="eventMessage" class="event-list">
+                Your events will appear here.
+            </div>
+        </section>
+
+        <section id="rsvp">
+            <h2>Event RSVP</h2>
+            <p>Let us know if you will attend the event.</p>
+
+            <form id="rsvpForm">
+                <label for="rsvpEvent">Choose Event:</label>
+                <select id="rsvpEvent" required>
+                    <option value="">Select an event</option>
+                </select>
+
+                <label for="attendeeName">Your Name:</label>
+                <input type="text" id="attendeeName" required>
+
+                <label for="rsvpStatus">Your Response:</label>
+                <select id="rsvpStatus" required>
+                    <option value="Going">Going</option>
+                    <option value="Maybe">Maybe</option>
+                    <option value="Not Going">Not Going</option>
+                </select>
+
+                <button type="submit">Submit RSVP</button>
+            </form>
+
+            <p id="rsvpMessage"></p>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
