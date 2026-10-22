@@ -24,7 +24,7 @@ async function loadEvents() {
     eventMessage.textContent = "Loading events...";
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/events/");
+        const response = await fetch("https://cloudsync-event-rsvp-tracker.onrender.com/events/");
         const data = await response.json();
 
         if (!response.ok) {
@@ -102,7 +102,7 @@ createEventForm.addEventListener("submit", async function (event) {
     createEventMessage.textContent = "Creating event...";
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/events/", {
+        const response = await fetch("https://cloudsync-event-rsvp-tracker.onrender.com/events/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -147,7 +147,7 @@ rsvpForm.addEventListener("submit", async function (event) {
     rsvpMessage.textContent = "Submitting your response...";
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/rsvp/", {
+        const response = await fetch("https://cloudsync-event-rsvp-tracker.onrender.com/rsvp/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
