@@ -93,3 +93,13 @@ Features will be marked complete only after implementation and testing.
 ---
 
 *CloudSync — Connecting people, events, and real-time information through the cloud.*
+## 🌐 Live Demo
+
+- **Frontend:** [Open CloudSync Website](https://cloudsync-event-rsvp-frontend.onrender.com)
+- **Backend API:** [Open CloudSync Backend](https://cloudsync-event-rsvp-tracker.onrender.com)
+
+## 🚀 Deployment
+
+- Frontend hosted on Render Static Site.
+- Backend hosted on Render Web Service.
+- Firebase Firestore used for cloud data storage.
